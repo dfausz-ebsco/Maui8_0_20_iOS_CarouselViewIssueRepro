@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarouselRepro.MainPage"
+             x:Name="this"
+             BindingContext="{x:Reference this}">
+
+    <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+        <Label
+                Text="Two Item Carousel View"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level3" />
+
+        <CarouselView ItemsSource="{Binding FooItemPair}" MaximumHeightRequest="150">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout>
+                        <Image Source="{Binding ImagePath}" />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <Label
+            Text="Three Item Carousel View"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level3" />
+        
+        <CarouselView ItemsSource="{Binding FooItemTrio}" MaximumHeightRequest="150">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout>
+                        <Image Source="{Binding ImagePath}" />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <Label
+            Text="Four Item Carousel View"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level3" />
+        <CarouselView ItemsSource="{Binding FooItemQuad}" MaximumHeightRequest="150">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout>
+                        <Image Source="{Binding ImagePath}" />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+    </VerticalStackLayout>
+
+</ContentPage>
