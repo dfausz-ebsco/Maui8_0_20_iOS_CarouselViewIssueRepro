@@ -17,9 +17,11 @@
         <CarouselView ItemsSource="{Binding FooItemPair}" MaximumHeightRequest="150">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <VerticalStackLayout>
+                    <Grid>
                         <Image Source="{Binding ImagePath}" />
-                    </VerticalStackLayout>
+                        <Label Text="Text not specified by data binding" BackgroundColor="Black" TextColor="White"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Grid>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
@@ -32,9 +34,11 @@
         <CarouselView ItemsSource="{Binding FooItemTrio}" MaximumHeightRequest="150">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <VerticalStackLayout>
+                    <Grid>
                         <Image Source="{Binding ImagePath}" />
-                    </VerticalStackLayout>
+                        <Label Text="Text not specified by data binding" BackgroundColor="Black" TextColor="White"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Grid>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
@@ -46,9 +50,11 @@
         <CarouselView ItemsSource="{Binding FooItemQuad}" MaximumHeightRequest="150">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <VerticalStackLayout>
+                    <Grid>
                         <Image Source="{Binding ImagePath}" />
-                    </VerticalStackLayout>
+                        <Label Text="Text not specified by data binding" BackgroundColor="Black" TextColor="White"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Grid>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
